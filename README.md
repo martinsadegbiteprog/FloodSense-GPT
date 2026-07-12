@@ -77,6 +77,7 @@ Render (Backend)
 🏗️ System Architecture
 
 Rainfall / Sensor Data
+
           ↓
           
    ML Prediction Model
