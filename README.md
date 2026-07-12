@@ -79,16 +79,21 @@ Render (Backend)
 Rainfall / Sensor Data
 
           ↓
+          
    ML Prediction Model
    
           ↓
+          
    Flood Risk Score
    
           ↓
+          
    LLM Explanation Engine
    
           ↓
+          
    RAG Knowledge System
    
           ↓
+          
    Web Dashboard (React)
