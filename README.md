@@ -23,6 +23,7 @@ Elevation data
 Outputs:
 Flood probability score
 Risk classification (Low / Medium / High)
+
 🧠 LLM-Based Explanation Engine
 Converts numerical predictions into natural language insights
 Provides:
@@ -40,14 +41,17 @@ Flood management guidelines
 Hydrology research papers
 Engineering manuals (e.g., HEC-RAS, HEC-HMS)
 Enables context-aware Q&A for flood mitigation strategies
+
 🗺️ Interactive Dashboard
 Displays flood-prone zones on a map
 Shows real-time predictions and risk heatmaps
 Built with modern frontend tools for usability
+
 📡 Real-Time Data Integration (Optional)
 Weather APIs (rainfall data)
 Satellite datasets (e.g., CHIRPS, NASA)
 Streaming updates for continuous monitoring
+
 🧱 Tech Stack
 Backend
 Python (FastAPI)
@@ -66,6 +70,7 @@ Leaflet / Mapbox
 Deployment
 Vercel (Frontend)
 Render (Backend)
+
 🏗️ System Architecture
 Rainfall / Sensor Data
           ↓
