@@ -97,3 +97,67 @@ Rainfall / Sensor Data
           ↓
           
    Web Dashboard (React)
+
+   ⚙️ Installation & Setup
+   
+1. Clone Repository
+
+git clone https://github.com/your-username/FloodSense-GPT.git
+cd FloodSense-GPT
+
+2. Backend Setup
+   
+cd backend
+pip install -r requirements.txt
+uvicorn main:app --reload
+
+3. Frontend Setup
+   
+cd frontend
+npm install
+npm run dev
+
+🧪 Example Usage
+
+Input
+{
+  "rainfall": 120,
+  "discharge": 300,
+  "soil_moisture": 0.85
+}
+
+Output
+{
+  "risk_score": 0.87,
+  "risk_level": "High",
+  "explanation": "High flood risk due to heavy rainfall and saturated soil..."
+}
+
+📈 Future Improvements
+
+Integration with real-time IoT flood sensors
+ConvLSTM-based spatiotemporal flood forecasting
+Satellite imagery analysis (CNN models)
+Mobile alerts (SMS / WhatsApp integration)
+Lagos-specific flood dataset and modeling
+
+🌍 Use Cases
+
+Urban flood monitoring (e.g., Lagos)
+Climate risk assessment for financial institutions
+Government disaster management agencies
+Infrastructure planning and engineering
+
+🤝 Contributing
+
+Contributions are welcome!
+Please fork the repository and submit a pull request.
+
+📄 License
+
+This project is licensed under the MIT License.
+
+👨‍💻 Author
+
+Martins Adejuwon Adegbite
+Civil Engineer | Machine Learning Engineer | GenAI Developer
