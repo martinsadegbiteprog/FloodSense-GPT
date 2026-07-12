@@ -1,7 +1,28 @@
+from rag.query import retrieve
+import os
+from openai import OpenAI
+
+USE_LLM = True
+client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
+
 def generate_explanation(data):
-    return (
-        f"Flood risk is {data['risk_level']} due to rainfall "
-        f"{data['rainfall']} mm, discharge {data['discharge']} m3/s, "
-        f"and soil moisture {data['soil_moisture']}. "
-        f"Take precautions and monitor conditions."
+    context = retrieve("flood risk and mitigation")
+
+    prompt = f"""
+    Context:
+    {context}
+
+    Rainfall: {data['rainfall']}
+    Discharge: {data['discharge']}
+    Soil: {data['soil_moisture']}
+    Risk: {data['risk_level']}
+
+    Explain clearly and give advice.
+    """
+
+    res = client.chat.completions.create(
+        model="gpt-4.1-mini",
+        messages=[{"role": "user", "content": prompt}]
     )
+
+    return res.choices[0].message.content
